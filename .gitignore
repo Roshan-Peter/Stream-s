@@ -1,0 +1,31 @@
+# .NET Build Artifacts
+[Bb]in/
+[Oo]bj/
+out/
+publish/
+
+# IDE Specific
+.vs/
+.vscode/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Secrets & Configuration
+appsettings.Development.json
+appsettings.Local.json
+*.pfx
+*.certificate
+.env
+
+# Database (PostgreSQL/SQLite)
+*.db
+*.sql
+*.dump
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Test Results
+TestResults/
