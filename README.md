@@ -1,1 +1,2 @@
 # Stream-s
+git init

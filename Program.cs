@@ -1,10 +1,16 @@
-using Microsoft.EntityFrameworkCore;
+
+using Microsoft.AspNetCore.Identity;
+using Stream.Schema;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
 
 builder.Services.AddInfrastructure(builder.Configuration);
+
+builder.Services.AddScoped<PasswordHasher<Users>>();
+
+// Custom AuthService if you created one
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 var app = builder.Build();
 
@@ -20,3 +26,4 @@ app.MapGet("/", () => new {
 });
 
 app.Run();
+
