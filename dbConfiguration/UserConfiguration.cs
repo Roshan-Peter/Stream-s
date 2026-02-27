@@ -11,5 +11,7 @@ public class UserConfiguration : BaseEntityConfiguration<Users>
         // 2. Add User-specific constraints
         builder.HasIndex(u => u.Username).IsUnique();
         builder.HasIndex(u => u.Email).IsUnique();
+
+        builder.Property(u => u.LastName).IsRequired(false);
     }
 }
