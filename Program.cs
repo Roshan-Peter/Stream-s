@@ -1,9 +1,11 @@
 
+using DotNetEnv;
 using Microsoft.AspNetCore.Identity;
 using Stream.Schema;
 
 var builder = WebApplication.CreateBuilder(args);
 
+Env.Load();
 
 builder.Services.AddInfrastructure(builder.Configuration);
 

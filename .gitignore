@@ -33,3 +33,5 @@ TestResults/
 
 # Ignore EF Core Migrations
 **/Migrations/*
+
+.env

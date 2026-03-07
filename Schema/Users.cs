@@ -22,8 +22,6 @@ namespace Stream.Schema
         [MaxLength(100)]
         public string Username {get; set;} = string.Empty;
 
-        public string PasswordHash { get; set; } = string.Empty;
-
     }
 
 }
